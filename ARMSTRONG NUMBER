@@ -1,0 +1,25 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int original=n;
+        int r=0;
+        int digits=0;
+       int temp = n;
+        while (temp != 0) {
+            digits++;
+            temp /= 10;
+        }
+       while(n!=0){
+          int d=n%10;
+           r=r+(int)Math.pow(d,digits);
+           n=n/10;
+           
+       }
+       if(r==original){
+           System.out.println("yes");
+       }else{
+            System.out.println("no");
+       }}
+    }
