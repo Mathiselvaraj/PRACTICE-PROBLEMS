@@ -1,0 +1,29 @@
+//power of 2 will have only 1 at its starting when it is converted to binary form except first element all other number in binary format will be zero
+
+
+
+
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int n=sc.nextInt();
+       String binary = Integer.toBinaryString(n);
+       char[] charArray = binary.toCharArray();
+       boolean t=false;
+      for (int c=1;c< charArray.length;c++) {
+          if(charArray[c]=='1'){
+              t=false;
+              break;
+          }else{
+              t=true;
+          }
+        }
+      if(t){
+          System.out.println("yes");
+      }else{
+          System.out.println("no");
+      }
+    }
+}
