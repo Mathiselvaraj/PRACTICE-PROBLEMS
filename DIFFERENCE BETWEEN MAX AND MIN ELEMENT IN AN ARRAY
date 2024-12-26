@@ -1,0 +1,36 @@
+import java.util.*;
+class Main {
+       public static int minarray(int arr[]){
+            int min=arr[0];
+            
+            for(int i=1;i<arr.length-1;i++){
+               if(min>arr[i]){
+                   min=arr[i];
+               }
+            } return min;
+        }
+         public static int maxarray(int arr[]){
+             int max=arr[0];
+             for(int i=1;i<arr.length-1;i++){
+               if(max<arr[i]){
+                   max=arr[i];
+               }
+            } return max;
+             
+         }
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+       int a[]=new int[n];
+       for(int i=0;i<n;i++){
+           a[i]=sc.nextInt();
+       }
+      int r= minarray(a);
+      int rm=maxarray(a);
+      System.out.println("MAX MIN");
+      System.out.println(rm);
+      System.out.println(r);
+      System.out.println(rm-r);
+    }
+}
