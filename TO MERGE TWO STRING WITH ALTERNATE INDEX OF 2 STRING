@@ -1,0 +1,36 @@
+import java.lang.*;
+class Main {
+    public static void main(String[] args) {
+       StringBuffer s1=new StringBuffer("chennai");
+      StringBuffer s2=new StringBuffer("hyderabad");
+       
+       int s1s=s1.length();
+       int s2s=s2.length();
+       if(s1s>s2s){
+           int d=s1s-s2s;
+           int j=s1s-d;
+           int k=s2s-1;
+           for(int i=j;i>=0;i--){
+               if(k>=0){
+               s1.insert(i,s2.charAt(k));
+               k--;
+           }
+       } System.out.println(s1);
+       }
+      
+        if(s1s<s2s){
+           int d=s2s-s1s;
+           int j=s2s-d;
+           int k=s1s-1;
+           for(int i=j;i>=0;i--){
+               if(k>=0){
+               s2.insert(i,s1.charAt(k));
+               k--;
+           }
+       }
+       }  System.out.println(s2);
+       
+           
+       
+       }
+}
