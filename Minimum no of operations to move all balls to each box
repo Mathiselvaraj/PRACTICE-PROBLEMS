@@ -1,0 +1,25 @@
+class Solution {
+    public int[] minOperations(String boxes) {
+        int l=boxes.length();
+        int[] a=new int[l];
+       
+        for(int i=0;i<l;i++){
+            int sum=0;
+            for(int j=0;j<l;j++){
+                  
+                 char c=boxes.charAt(j);
+                 if(c=='1'){
+                     sum+=Math.abs(j-i);
+
+                 }
+            }a[i]=sum;
+        }
+        return a;
+           
+
+        }
+    }
+
+
+
+//(Leetcode) 1769
