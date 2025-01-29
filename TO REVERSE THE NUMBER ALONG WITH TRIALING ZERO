@@ -1,0 +1,28 @@
+class Main {
+    public static void main(String[] args) {
+       int n=1800;
+       int num=n;
+       int c=0;
+       int r=0;
+      int a=0;
+       while(n>0){
+           int d=n%10;
+           r=r*10+d;
+           n=n/10;
+           c++;
+       }
+       int rr=r;
+       while(rr>0){
+          
+           rr=rr/10;
+           a++;
+       }
+       int m=c-a;
+       for(int i=0;i<m;i++){
+           System.out.print("0");
+           
+       }System.out.println(r);
+       
+       
+    }
+}
