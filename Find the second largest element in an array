@@ -17,3 +17,25 @@ class Main {
       System.out.println(se);
     }
 }
+
+//OPTIMAL SOLUTION
+
+
+
+class Main {
+    public static void main(String[] args) {
+        int a[]={20,10,23,50,50};
+        int lar=a[0];
+        int sec_lar=-1;
+        for(int i=1;i<a.length;i++){
+            if(a[i]>lar){
+                 sec_lar=lar;
+                lar=a[i];
+               
+            }else if(a[i]>sec_lar&&a[i]!=lar){
+                sec_lar=a[i];
+            }
+        }
+        System.out.println(sec_lar);
+    }
+}
