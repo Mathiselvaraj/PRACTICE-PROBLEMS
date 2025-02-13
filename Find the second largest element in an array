@@ -1,0 +1,19 @@
+
+class Main {
+    public static void main(String[] args) {
+      int a[]={2,51,3,46,51,10,10};
+      int l=a[0];
+      for(int i=1;i<a.length;i++){
+          if(a[i]>l){
+              l=a[i];
+          }
+      }
+      int se=-1;
+      for(int i=0;i<a.length;i++){
+          if(a[i]>se && a[i]!=l){
+              se=a[i];
+          }
+      }
+      System.out.println(se);
+    }
+}
