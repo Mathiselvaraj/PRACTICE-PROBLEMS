@@ -1,0 +1,23 @@
+class Main {
+    public static void main(String[] args) {
+       int a[]={1,1,0,0,1,1,1,1,0,0,1,1,1};
+       int maxi=0;
+       int c=0;
+       for(int i=0;i<a.length;i++){
+           if(a[i]==1){
+               c++;
+            maxi=maxs(maxi,c); 
+           }
+           else{
+               c=0;
+           }  }
+         System.out.println(maxi);
+    }
+   public static int maxs(int a, int b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+}
