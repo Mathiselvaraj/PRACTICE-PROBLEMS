@@ -21,3 +21,42 @@ class Main {
     }
 }
 }
+
+
+OR
+
+
+
+public class Main
+{
+    public static int findmaxconsone(int numsarray[]){
+        int maxc=0;
+        int onecount=0;
+        for(int num:numsarray){
+            if(num==1){
+                onecount++;
+                maxc=Math.max(maxc,onecount);
+            }else{
+                onecount=0;
+            }
+        }
+        return maxc;
+    }
+	public static void main(String[] args) {
+             int a[]={1,1,0,0,1,1,1,0,1,1,1,1};
+             int maxone=findmaxconsone(a);
+  System.out.println("max consecutive num of one is:"+maxone);
+             
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
